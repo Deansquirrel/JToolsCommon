@@ -5,6 +5,8 @@ import java.io.StringWriter;
 
 public class ExceptionTool {
 	
+	private ExceptionTool() {}
+	
 	/**
 	 * 将错误堆栈输出到文本
 	 * @param t

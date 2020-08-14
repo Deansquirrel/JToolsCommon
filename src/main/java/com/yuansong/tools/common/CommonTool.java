@@ -13,6 +13,9 @@ import java.util.List;
  */
 
 public class CommonTool {
+	
+	private CommonTool() {}
+	
 	/***
 	 * 字符串MD5计算
 	 * @param data

@@ -10,6 +10,8 @@ import java.text.SimpleDateFormat;
  */
 public class DateTool {
 	
+	private DateTool() {}
+	
 	private static String _defaultFormat = "yyyy-MM-dd HH:mm:ss.SSS";
 	private static String _dateFormat = "yyyy-MM-dd";
 	private static String _datetimeFormat = "yyyy-MM-dd HH:mm:ss";

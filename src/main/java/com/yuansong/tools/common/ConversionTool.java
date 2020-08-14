@@ -6,6 +6,8 @@ package com.yuansong.tools.common;
  */
 
 public class ConversionTool {
+	
+	private ConversionTool() {}
 
 	/***
 	 * 

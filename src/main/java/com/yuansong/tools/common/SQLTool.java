@@ -11,6 +11,8 @@ import java.sql.SQLException;
 
 public class SQLTool {
 	
+	private SQLTool() {}
+	
 	public static String getString(ResultSet rs, String columnLabel) throws SQLException {
 		return rs.getString(columnLabel);
 	}
@@ -19,7 +21,7 @@ public class SQLTool {
 		return rs.getNString(columnLabel);
 	}
 	
-	public Byte getByte(ResultSet rs, String columnLabel) throws SQLException {
+	public static Byte getByte(ResultSet rs, String columnLabel) throws SQLException {
 		Byte d = rs.getByte(columnLabel);
 		if(rs.wasNull()) {
 			d = null;
@@ -27,7 +29,7 @@ public class SQLTool {
 		return d;
 	}
 	
-	public Short getShort(ResultSet rs, String columnLabel) throws SQLException {
+	public static Short getShort(ResultSet rs, String columnLabel) throws SQLException {
 		Short d = rs.getShort(columnLabel);
 		if(rs.wasNull()) {
 			d = null;

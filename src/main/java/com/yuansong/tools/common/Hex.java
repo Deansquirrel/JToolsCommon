@@ -8,6 +8,8 @@ package com.yuansong.tools.common;
 
 public class Hex {
 	
+	private Hex() {}
+	
 	/**
      * 用于建立十六进制字符的输出的小写字符数组
      */

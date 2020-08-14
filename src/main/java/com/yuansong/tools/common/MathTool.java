@@ -9,6 +9,9 @@ import java.util.Random;
  */
 
 public class MathTool {
+	
+	private MathTool() {}
+	
 	/***
 	 * 根据指定范围，返回随机整数
 	 * @param min 最小值
