@@ -24,18 +24,32 @@ public interface IRunUntillSuccess  {
 	 */
 	public void suffixJob();
 	
+	/**
+	 * 当前线程中启动
+	 */
 	default public void startMain() {
 		this.startMain(5000L);
 	}
 	
+	/**
+	 * 以线程方式启动
+	 */
 	default public void startThread() {
 		this.startThread(5000L);
 	}
 	
+	/**
+	 * 当前线程中启动
+	 * @param interval
+	 */
 	default public void startMain(long interval) {
 		runJob(interval);
 	}
 	
+	/**
+	 * 以线程方式启动
+	 * @param interval
+	 */
 	default public void startThread(long interval) {
 		Thread d = new Thread(new Runnable() {
 
