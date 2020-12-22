@@ -11,7 +11,7 @@ import java.util.Random;
 public class MathTool {
 	
 	private MathTool() {}
-	
+		
 	/***
 	 * 根据指定范围，返回随机整数
 	 * @param min 最小值
@@ -19,6 +19,12 @@ public class MathTool {
 	 * @return
 	 */
 	public static Integer RandInt(Integer min,Integer max) {
+		if(min == null) {
+			min = 0;
+		}
+		if(max == null) {
+			max = 0;
+		}
 		if(min == max) {
 			return min;
 		}
@@ -29,5 +35,14 @@ public class MathTool {
 		}
 		Random r = new Random();
 		return min + r.nextInt(max-min);
+	}
+	
+	/**
+	 * 返回随机整数（最小值=0）
+	 * @param max 最大值（不含）
+	 * @return
+	 */
+	public static Integer RandInt(Integer max) {
+		return RandInt(0, max);
 	}
 }

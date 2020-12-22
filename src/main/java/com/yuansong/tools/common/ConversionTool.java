@@ -10,7 +10,7 @@ public class ConversionTool {
 	private ConversionTool() {}
 
 	/***
-	 * 
+	 * java.sql.Date 转 java.util.Date 
 	 * @param date
 	 * @return
 	 */
@@ -22,7 +22,7 @@ public class ConversionTool {
 	}
 	
 	/***
-	 * 
+	 * java.util.Date 转 java.sql.Date 
 	 * @param date
 	 * @return
 	 */
