@@ -5,8 +5,8 @@
   <!-- <groupId>com.yuansong.tools</groupId> -->
   <groupId>com.yuansong.tools</groupId>
   <artifactId>tools-common</artifactId>
-  <version>0.0.4</version>
-  <!--<version>0.0.0</version>-->
+  <!--<version>0.0.4</version>-->
+  <version>0.0.0</version>
   <name>tools-common</name>
   <description>tools common</description>
 
